@@ -2,7 +2,7 @@
 
 A modern Android application that provides a comprehensive QR code scanning experience with advanced hex editor functionality. Unlike standard QR readers that only show interpreted content, **QR Code Hex Reader displays the actual raw bytes** of the QR code data, giving you complete transparency into what's encoded. This is essential for security analysis, detecting tracking redirects, debugging non-standard formats, and understanding exactly what data is stored in the QR code.
 
-![QR Code Reader Demo](docs/video.gif)
+![QR Code Reader Demo](docs/record.gif)
 
 ## Features
 
