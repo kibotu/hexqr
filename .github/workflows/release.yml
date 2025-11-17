@@ -31,19 +31,10 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
       
-      - name: Restore release keystore
-        run: |
-          mkdir -p app/keystore
-          echo "${{ secrets.RELEASE_KEYSTORE }}" | base64 -d > app/keystore/release.keystore
-      
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       
       - name: Build release APK
-        env:
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           ./gradlew assembleRelease
       

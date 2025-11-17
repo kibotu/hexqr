@@ -103,6 +103,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.activity:activity-compose:1.11.0")
+    implementation("androidx.core:core-ktx:1.15.0")
     
     // CameraX
     implementation("androidx.camera:camera-core:1.5.1")
@@ -134,6 +135,10 @@ dependencies {
     
     // Accompanist Permissions
     implementation("com.google.accompanist:accompanist-permissions:0.37.3")
+    
+    // ZXing for QR code generation
+    implementation("com.google.zxing:core:3.5.3")
+    implementation("com.google.zxing:android-core:3.3.0")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
