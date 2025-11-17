@@ -1,8 +1,8 @@
-# QR Code Hex Reader
+# QR Code Hex Reader [![GitHub Release](https://img.shields.io/github/v/release/kibotu/hexqr)](https://github.com/kibotu/hexqr/releases)
 
 A modern Android application that provides a comprehensive QR code scanning experience with advanced hex editor functionality. Unlike standard QR readers that only show interpreted content, **QR Code Hex Reader displays the actual raw bytes** of the QR code data, giving you complete transparency into what's encoded. This is essential for security analysis, detecting tracking redirects, debugging non-standard formats, and understanding exactly what data is stored in the QR code.
 
-![QR Code Reader Demo](docs/record.gif)
+![QR Code Reader Demo](docs/video.gif)
 
 ## Features
 
@@ -115,31 +115,6 @@ All camera data is processed locally on your device. No data is transmitted over
 
    APK files will be generated in `app/build/outputs/apk/`
 
-### Build Variants
-
-- **Debug** - Includes logging and debug features
-- **Release** - Optimized, minified, and obfuscated for production
-
-## Architecture
-
-The app follows modern Android development best practices:
-
-- **Architecture Pattern**: MVVM (Model-View-ViewModel)
-- **UI Framework**: Jetpack Compose
-- **Dependency Injection**: Hilt
-- **State Management**: StateFlow with reactive UI updates
-- **Camera Integration**: CameraX with ML Kit Barcode Scanning
-
-### Project Structure
-
-```
-app/
-├── data/          # Data models and repositories
-├── domain/        # Business logic and use cases
-├── ui/            # Compose UI components and screens
-└── MainActivity.kt
-```
-
 ## Tech Stack
 
 - **Language**: Kotlin 2.2.21
@@ -158,23 +133,6 @@ app/
 - **No Storage** - Scanned content is not saved unless explicitly shared by the user
 - **Privacy-First** - Respects user privacy and data protection
 
-## Accessibility
-
-The app is designed with accessibility in mind:
-
-- Screen reader support (TalkBack)
-- High contrast mode support
-- Large text support
-- Minimum touch target sizes (48dp)
-- Content descriptions for all interactive elements
-
-## Performance
-
-- Optimized camera preview resolution
-- Throttled QR detection for battery efficiency
-- Background thread parsing
-- Proper resource disposal
-- Smooth 60fps camera preview
 
 ## Troubleshooting
 
