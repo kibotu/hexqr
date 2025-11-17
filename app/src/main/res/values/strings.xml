@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HexQRApp</string>
+    
+    <!-- Permissions -->
+    <string name="camera_permission_required">Camera permission is required to scan QR codes</string>
+    <string name="camera_permission_rationale">This app needs camera access to scan QR codes. Please grant camera permission.</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- Scanner -->
+    <string name="scanning">Scanning…</string>
+    <string name="no_qr_code_detected">No QR code detected</string>
+    <string name="point_camera_at_qr">Point your camera at a QR code</string>
+    
+    <!-- Content Display -->
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="hex_editor">Hex Editor</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    
+    <!-- Hex Editor -->
+    <string name="hex_editor_title">Hex Editor</string>
+    <string name="offset">Offset</string>
+    <string name="hex_data">Hex Data</string>
+    <string name="ascii">ASCII</string>
+    <string name="copy_hex">Copy Hex</string>
+    
+    <!-- Content Types -->
+    <string name="type_url">URL</string>
+    <string name="type_text">Text</string>
+    <string name="type_vcard">Contact</string>
+    <string name="type_wifi">WiFi</string>
+    <string name="type_email">Email</string>
+    <string name="type_sms">SMS</string>
+    <string name="type_geo">Location</string>
+    <string name="type_calendar">Calendar</string>
+    <string name="type_unknown">Unknown</string>
+    
+    <!-- Parsed Content Labels -->
+    <string name="protocol">Protocol</string>
+    <string name="domain">Domain</string>
+    <string name="path">Path</string>
+    <string name="query_parameters">Query Parameters</string>
+    <string name="fragment">Fragment</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="organization">Organization</string>
+    <string name="website">Website</string>
+    <string name="ssid">SSID</string>
+    <string name="security">Security</string>
+    <string name="password">Password</string>
+    <string name="hidden_network">Hidden Network</string>
+    <string name="subject">Subject</string>
+    <string name="body">Body</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="message">Message</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="altitude">Altitude</string>
+    <string name="title">Title</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    
+    <!-- Errors -->
+    <string name="error_camera_unavailable">Camera is not available</string>
+    <string name="error_parsing_qr_code">Error parsing QR code</string>
+    <string name="error_unknown">An unknown error occurred</string>
+</resources>
+
