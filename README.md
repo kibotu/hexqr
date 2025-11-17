@@ -2,6 +2,8 @@
 
 A modern Android application that provides a comprehensive QR code scanning experience with advanced hex editor functionality. Built with Jetpack Compose, the app focuses on displaying QR code content in a user-friendly way while offering developers and power users the ability to inspect raw byte data.
 
+![QR Code Reader Demo](docs/video.gif)
+
 ## Features
 
 ### Core Functionality
@@ -24,10 +26,6 @@ The app intelligently parses and displays content from various QR code formats:
 - **Geographic Location** - Latitude, longitude, and altitude
 - **Calendar Events** - Title, dates, location, and description
 - **Plain Text** - Raw text content with encoding information
-
-## Screenshots
-
-_Coming soon - Screenshots will be added here_
 
 ## Installation
 
