@@ -160,10 +160,6 @@ All camera data is processed locally on your device. No data is transmitted over
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-
-Proprietary and confidential.
-
 ## Acknowledgments
 
 Built with modern Android development tools and libraries:
