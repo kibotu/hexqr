@@ -1,6 +1,6 @@
-# QR Code Reader
+# QR Code Hex Reader
 
-A modern Android application that provides a comprehensive QR code scanning experience with advanced hex editor functionality. Built with Jetpack Compose, the app focuses on displaying QR code content in a user-friendly way while offering developers and power users the ability to inspect raw byte data.
+A modern Android application that provides a comprehensive QR code scanning experience with advanced hex editor functionality. Unlike standard QR readers that only show interpreted content, **QR Code Hex Reader displays the actual raw bytes** of the QR code data, giving you complete transparency into what's encoded. This is essential for security analysis, detecting tracking redirects, debugging non-standard formats, and understanding exactly what data is stored in the QR code.
 
 ![QR Code Reader Demo](docs/video.gif)
 
@@ -8,11 +8,27 @@ A modern Android application that provides a comprehensive QR code scanning expe
 
 ### Core Functionality
 
+- **Raw Byte Inspection** - View the actual bytes stored in the QR code, not just interpreted content
 - **Real-time QR Code Scanning** - Continuous camera-based detection with visual feedback
-- **Smart Content Parsing** - Automatically detects and formats common QR code types
+- **Smart Content Parsing** - Automatically detects and formats common QR code types (while preserving raw data access)
 - **Hex Editor** - Inspect raw byte data with hex representation and ASCII display
+- **Security Analysis** - Detect tracking redirects, hidden data, and non-standard encodings
 - **Modern UI** - Clean Material Design 3 interface with dark mode support
 - **Offline-First** - All processing happens locally, no network required
+
+### Why Raw Bytes Matter
+
+Most QR code readers only show you the interpreted content (e.g., "https://example.com"). But QR codes can contain:
+- **Tracking redirects** - URLs that redirect through tracking services before reaching the destination
+- **Non-standard formats** - Custom encodings that standard parsers don't recognize
+- **Hidden data** - Additional bytes that aren't part of the main content
+- **Encoding variations** - Different character encodings that affect how content is displayed
+
+By showing the actual bytes, you can:
+- **Verify URLs** - See the exact destination before clicking, avoiding tracking redirects
+- **Debug issues** - Understand why a QR code isn't working with standard readers
+- **Security audit** - Inspect QR codes for suspicious content or hidden data
+- **Learn** - Understand how QR codes encode different data types
 
 ### Supported Formats
 
@@ -54,8 +70,10 @@ All camera data is processed locally on your device. No data is transmitted over
 2. Point your camera at a QR code
 3. The app will automatically detect and parse the content
 4. View formatted content in the main display area
-5. Tap "Hex Editor" to inspect raw byte data
+5. **Tap "Hex Editor" to inspect the actual raw bytes** - See exactly what's encoded in the QR code
 6. Use copy/share buttons to export content
+
+**Pro Tip**: Always check the hex editor view before clicking URLs to verify the destination and detect any tracking redirects or suspicious content.
 
 ## Building
 
